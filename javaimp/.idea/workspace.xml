@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="563ca1e0-cfb8-4355-8ad8-6e587e1e37b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com.github.hefuduo.chapter3/Chapter3KtTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kotlinimpl/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kotlinimpl/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kotlinimpl/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kotlinimpl/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kotlinimpl/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kotlinimpl/.idea/thriftCompiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kotlinimpl/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kotlinimpl/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kotlinimpl/kotlinimpl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cimpl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cimpl/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cppimpl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cppimpl/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../kotlinimpl/src/main/kotlin/kotlinimpl/chapter3.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaimp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javaimp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaimp/META-INF/javaimp.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaimp/com/github/hefuduo/MainKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaimp/com/github/hefuduo/chapter3/Chapter3Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/hefuduo/chapter3/chapter3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/hefuduo/chapter3/chapter3.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/hefuduo/chapter3/chapter3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/hefuduo/chapter/chapter3.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/hefuduo/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/hefuduo/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com.github.hefuduo.chapter3/Chapter3KtTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/com.github.hefuduo.chapter3/Chapter3KtTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kotlinimpl/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kotlinimpl/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,31 +43,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/github/hefuduo/chapter3/chapter3.kt">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com.github.hefuduo.chapter3/Chapter3KtTest.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/hefuduo/main.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-              <folding>
-                <element signature="e#28#118#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="56">
+              <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -119,6 +85,7 @@
         <option value="$PROJECT_DIR$/src/com/github/hefuduo/chapter3/Chapter3KtTest.java" />
         <option value="$PROJECT_DIR$/src/com/github/hefuduo/chapter3/Chapter3KtTest.kt" />
         <option value="$PROJECT_DIR$/src/com/github/hefuduo/chapter3/chapter3.kt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -138,12 +105,52 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="javaimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaimp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaimp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaimp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hefuduo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaimp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="hefuduo" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaimp" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaimp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javaimp" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="com.github.hefuduo.chapter3" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/software/android/android-sdk-linux" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
@@ -254,10 +261,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52216000" />
+    <option name="totallyTimeSpent" value="52230000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="840" y="23" width="840" height="1027" extended-state="1" />
+    <frame x="840" y="23" width="840" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.20625" visible="true" weight="0.4649123" />
@@ -299,6 +306,22 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -682,13 +705,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/hefuduo/chapter3/chapter3.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/hefuduo/chapter3/chapter3.kt" />
     <entry file="file://$PROJECT_DIR$/test/com.github.hefuduo.chapter3/Chapter3KtTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">

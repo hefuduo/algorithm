@@ -10,7 +10,7 @@ import org.junit.runner.RunWith
 import org.junit.Assert.*
 
 /**
- * com.github.hefuduo.chapter3
+ * com.github.hefuduo.chapter
  * Created by hefuduo on 2019-10-11.
  */
 @RunWith(Arquillian::class)

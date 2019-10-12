@@ -1,1 +1,12 @@
 #ignore
+./kotlinimpl/build
+./kotlinimpl/gradle
+./kotlinimpl/kotlinimpl.iml
+./kotlinimpl/.idea
+
+./javaimp/out
+./javaimp/javaimp.iml
+./javaimp/.idea
+
+
+.gitignore
