@@ -11,5 +11,28 @@ class App {
 }
 
 fun main(args: Array<String>) {
-    println(App().greeting)
+    test()
+}
+
+
+fun <E> revserSingleOriententList(head: Node<E>?) {
+    var newHead = Node<E>(null, null, null)
+    var cur = head
+    while (cur != null) {
+        var temp = cur.next
+        cur.next = newHead
+        newHead = cur
+        cur = temp
+    }
+    newHead.printList()
+}
+
+fun test() {
+    val head: Node<Int>? = Node(0, null, null)
+    var x = head
+    for (i in 1..9) {
+        x?.next = Node(i, null, null)
+        x = x?.next
+    }
+    revserSingleOriententList(head)
 }
