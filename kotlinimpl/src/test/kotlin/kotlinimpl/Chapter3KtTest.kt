@@ -1,5 +1,6 @@
 package kotlinimpl
 
+import kotlin.random.Random
 import kotlin.test.BeforeTest
 import kotlin.test.Test
 
@@ -19,13 +20,6 @@ class Chapter3KtTest {
         printLots(p, q)
     }
 
-    fun <E> Node<E>?.printList() {
-        var p = this
-        while (p != null) {
-            println(p.item)
-            p = p.next
-        }
-    }
 
     @Test
     fun switchWithNext() {
@@ -60,22 +54,44 @@ class Chapter3KtTest {
             println("beforeP is ${beforeP.item}")
             switchWithNext2(beforeP)
         }
-        head.printList()
+        head?.printList()
     }
 
     @Test
     fun interSection() {
         val l1 = listOf(1, 4, 5, 6, 7, 8, 10)
-        val l2 = listOf(4, 7 , 23, 24)
+        val l2 = listOf(4, 7, 23, 24)
         val result = interSection(l1, l2)
         println(result)
     }
 
     @Test
-    fun union(){
+    fun union() {
         val l1 = listOf(1, 4, 5, 6, 7, 8, 10)
-        val l2 = listOf(4, 7 , 23, 24)
+        val l2 = listOf(4, 7, 23, 24)
         val result = union(l1, l2)
         println(result)
+    }
+
+
+    @Test
+    fun sizeOfListTest() {
+
+    }
+
+    @Test
+    fun bubbleSortTest() {
+        val random = Random(20)
+        val head = Node(random.nextInt(0, 100), null, null)
+        var p = head
+        for (i in 1..5) {
+            p.next = Node(random.nextInt(0, 100), null, null)
+            p = p.next!!
+        }
+
+        head.printList()
+        bubbleSort(head)
+        println("排序后")
+        head.printList()
     }
 }
