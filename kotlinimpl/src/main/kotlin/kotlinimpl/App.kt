@@ -3,6 +3,9 @@
  */
 package kotlinimpl
 
+import java.util.concurrent.CountDownLatch
+import java.util.concurrent.Executors
+
 class App {
     val greeting: String
         get() {
@@ -11,7 +14,14 @@ class App {
 }
 
 fun main(args: Array<String>) {
-    test()
+    val countDownLatch = CountDownLatch(2)
+    val a = A(countDownLatch)
+    val b = B(countDownLatch)
+    val threadPool = Executors.newFixedThreadPool(4)
+    threadPool.submit(a)
+    threadPool.submit(b)
+    countDownLatch.await()
+    println("end");
 }
 
 
@@ -35,4 +45,30 @@ fun test() {
         x = x?.next
     }
     revserSingleOriententList(head)
+}
+
+class A(val countDownLatch: CountDownLatch) : Runnable{
+    override fun run() {
+        try {
+            Thread.sleep(2000)
+        } catch (e: Exception) {
+        } finally {
+            println("A run out")
+            countDownLatch.countDown()
+        }
+    }
+}
+
+
+class B(val countDownLatch: CountDownLatch) : Runnable {
+    override fun run() {
+        try {
+            Thread.sleep(1000);
+        } catch (e: Exception) {
+        } finally {
+            println("B run out")
+            countDownLatch.countDown()
+        }
+    }
+
 }
