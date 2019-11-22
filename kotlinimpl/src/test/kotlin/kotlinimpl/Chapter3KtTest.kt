@@ -1,8 +1,8 @@
 package kotlinimpl
 
+
+import kotlin.test.*;
 import kotlin.random.Random
-import kotlin.test.BeforeTest
-import kotlin.test.Test
 
 /**
  * kotlinimpl
