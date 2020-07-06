@@ -159,7 +159,7 @@ fun heapSort(a: IntArray) {
     }
 
     fun buildMaxHeap(w: Int) {
-        val n = parent(w)
+        val n = parent(w) //n第一个非叶子节点. w为叶子节点;
         for (i in n downTo 0) {
             maxHeap(i, w)
         }
@@ -170,7 +170,7 @@ fun heapSort(a: IntArray) {
         a[i] = a[j]
         a[j] = temp
     }
-
+    //0-j
     for (j in a.size - 1 downTo 1) {
         buildMaxHeap(j)
         swap(0, j)
