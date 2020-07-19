@@ -205,14 +205,15 @@ class AvlTree<E : Comparable<E>> {
         insert(data, root)
     }
 
-    val ALLOWED_IMBALANCE = 1;
+    val ALLOWED_IMBALANCE = 1 //允许的左右子树的高度差!!! 平衡条件.
 
     /**
-     * 平衡
+     * 平衡 这个才是平衡二叉树(AVLTree)的最精髓的地方=>如何保证一个点的左右子树是平衡的
      * @param avlNode AvlNode<E>
      * @return AvlNode<E>?
      */
     private fun balance(t: AvlNode<E>): AvlNode<E>? {
+        //如果左边大于右边 右旋转
         if (height(t.left) - height(t.right) > ALLOWED_IMBALANCE) {
             if (height(t.left?.left) >= height(t.left?.right)) {
                 rotateWithLeftChild(t)
